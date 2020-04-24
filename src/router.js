@@ -6,6 +6,9 @@ import Login from './pages/login'
 import Button from './pages/ui/button'
 import Logins from './pages/form/login'
 import Reg from './pages/form/reg'
+import Table from './pages/table'
+import Bar from './pages/echarts/bar'
+import Pie from './pages/echarts/pie'
 const Routers = () => {
     return ( 
          <Router>
@@ -15,7 +18,10 @@ const Routers = () => {
                          <Route path='/admin/ui/buttons' component={Button}/>
                          <Route path='/admin/form/login' component={Logins}/>
                          <Route path='/admin/form/reg' component={Reg}/>
-                         
+                         <Route path='/admin/table/basic' component={Table}/>   
+                         <Route path='/admin/charts/bar' component={Bar}/>  
+                         <Route path='/admin/charts/pie' component={Pie}/>
+                                    
                      </Admin>
                  }
                  />
